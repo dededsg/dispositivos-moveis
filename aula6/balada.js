@@ -10,5 +10,5 @@ else if(idade >= 16 && idade < 18){
 }
 else{
     console.log('Que abuso!!!')
-    console.log('vou ver glinha pintadinha em casa ')
+    console.log('vou ver galinha pintadinha em casa ')
 }
