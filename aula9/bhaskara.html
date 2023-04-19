@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let num1 = Number(prompt("Informe a:"));
+      let num2 = Number(prompt("Informe b:"));
+      let num3 = Number(prompt("Informe c:"));
+
+      function bhaskara(a, b, c) {
+        const delta = b * b - 4 * a * c;
+        if (delta < 0) {
+            document.write("A equação não possui raízes reais.");
+        }
+        const x1 = (-b + Math.sqrt(delta)) / (2 * a);
+        const x2 = (-b - Math.sqrt(delta)) / (2 * a);
+        document.write(`Delta: ${delta.toFixed(2)}. Raízes: x' = ${x1.toFixed(
+          2
+        )}, x'' = ${x2.toFixed(2)}.`);
+      }
+      console.log(bhaskara(num1, num2, num3));
+    </script>
+  </body>
+</html>
