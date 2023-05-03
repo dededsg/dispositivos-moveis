@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+  </head>
+  <body>
+    <h1 id="titulo1">exemplo1 - DOM</h1>
+
+    <main class="cprincipal" id="idprincipal">
+      <h2 id="subtitulo1">Subtítulo 1</h2>
+      <p>Primeiro parágrafo do Subtítulo 1.</p>
+    </main>
+
+    <section class="csecao" id="idsecao">
+        <h3>Subtítulo</h3>
+        <p class="paragrafo1">Primeiro parágrafo do subtitulo 2.</p>
+        <p class="paragrafo1">Segundo parágrafo do subtitulo 2.</p>
+    </section>
+    <script>
+        document.querySelector("h1").textContent = "Troquei por isso aqui";
+        document.getElementById("titulo1").textContent = "Troquei por ID";
+        document.getElementById("subtitulo1").textContent = "troquei por isso aqui agora mesmo";
+        document.getElementsByClassName("paragrafo1")[0].textContent = ("Troca 1° parágrafo")
+        document.getElementsByClassName("paragrafo1")[1].textContent = ("Troca 2° parágrafo")
+    </script>
+  </body>
+</html>
